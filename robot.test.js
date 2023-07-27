@@ -236,7 +236,7 @@ describe('Instructions', () => {
 	})
 
 	test('Should advance with instruction A and with coordinates: [9, 2], orientation: West', () => {
-		const place =  {coordinates: [8, 2], orientation: 'West'}
+		const place =  { coordinates: [8, 2], orientation: 'West' }
 		const myRobot = createRobot([9, 2], 'West')
 		myRobot.instructions('A')
 		const result = myRobot.getPosition()
@@ -246,7 +246,7 @@ describe('Instructions', () => {
 
 describe('robot function complete', () => {
 	test('Should function createdRobot with instruction RAALAL and with coordinates: [7, 3], orientation: North', () => {
-		const place =  {coordinates: [9, 4], orientation: 'West'}
+		const place =  { coordinates: [9, 4], orientation: 'West' }
 		const myRobot = createRobot([7, 3], 'North')
 		myRobot.instructions('RAALAL')
 		const result = myRobot.getPosition()
