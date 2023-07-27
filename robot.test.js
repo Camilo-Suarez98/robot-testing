@@ -140,11 +140,11 @@ describe('robot turn to left', () => {
 
 describe('Instructions', () => {
 	test('Should show message invalid orientation with instruction not valid and with coordinates: [6, 1], orientation: West', () => {
-		const message = 'invalid orientation'
+		const message = 'invalid operation'
 		const myRobot = createRobot([6, 1], 'West')
     myRobot.instructions('C')
-		const result = myRobot.getPosition()
-		expect(result).toBe(message)
+		const result = myRobot
+		expect(result.message).toBe(message)
 	})
 
 	test('Should advance with instruction R and with coordinates: [7, 3], orientation: North', () => {
